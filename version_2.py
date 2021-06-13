@@ -1,6 +1,8 @@
 import requests
 from bs4 import BeautifulSoup
 from random import choice
+from random import shuffle
+go=0
 base = "http://quotes.toscrape.com"
 
 def scrape():
@@ -26,7 +28,8 @@ quoters=scrape()
 
 
 def choose():
-    choosen_person=choice(quoters)
+    shuffle(quoters)
+    choosen_person=(choice(quoters))
     r = requests.get(f"http://quotes.toscrape.com/"+choosen_person["bio"])
     name={"first":choosen_person["name"].split()[0],"last":choosen_person["name"].split()[1]}
     s = BeautifulSoup(r.text, "html.parser")

@@ -2,7 +2,6 @@ import requests
 from bs4 import BeautifulSoup
 from random import choice
 from random import shuffle
-go=0
 base = "http://quotes.toscrape.com"
 
 def scrape():

@@ -4,4 +4,4 @@ I will be adding my modified versions in the near future
 
 NOTE 
 
-# version 3 will be using python's datetime module in order to make the webscrape based on date logic will be revisiting this project
+# version 3 will be using python's datetime module in order to make the webscraping based on date logic will be revisiting this project
